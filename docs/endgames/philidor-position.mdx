@@ -1,0 +1,44 @@
+---
+sidebar_position: 4
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# The Philidor Position
+
+The **Philidor Position** is the most important *drawing* technique in rook
+endgames. When you're a pawn down but your king is in front of the enemy pawn, this
+method holds the draw. It's the defensive counterpart to the
+[Lucena Position](./lucena-position).
+
+## The Position
+
+Black is defending against White's pawn on e5. Black's king blockades in front, and
+the defensive key is Black's **rook on the sixth rank**. It's Black to move:
+
+<InteractiveBoard fen="4k3/8/r7/4P3/4K3/8/8/7R" turn="b" />
+
+## The Third-Rank Defense
+
+The drawing plan has two phases:
+
+1. **Hold the sixth rank.** Keep your rook on the rank in front of the pawn (the 6th
+   rank here). This stops the enemy king from advancing to support the pawn — without
+   the king's help, the pawn can't make progress.
+2. **Switch to checks from behind.** The moment the enemy is forced to push the pawn
+   to the 6th rank (`e6`), drop your rook to the far end (`Ra1`) and check the king
+   from behind. With the pawn no longer shielding it, the king can't escape the
+   checks, so it's a draw.
+
+## Key Ideas
+
+- **Get your king in front of the pawn** first — that's what makes the draw possible.
+- **Rook on the third rank** (the 6th from White's side) keeps the enemy king out.
+- **Once the pawn advances, check from behind** — the further away, the better, so
+  the king can never approach your rook.
+
+:::tip
+Lucena wins, Philidor draws. If you're a pawn down in a rook endgame, aim for the
+Philidor setup — king in front, rook on the third rank — and you'll hold far more
+positions than you'd expect.
+:::

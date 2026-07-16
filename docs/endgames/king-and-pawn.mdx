@@ -1,0 +1,50 @@
+---
+sidebar_position: 2
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# King & Pawn Endgames
+
+King and pawn endgames are the foundation of all endgame play — the rules here echo
+through every other ending. This page goes beyond the fundamentals on the
+[Endgame Basics](/docs/chess-rules/endgame-basics) page (the opposition, the rule of
+the square) into two decisive ideas: **key squares** and **triangulation**.
+
+## Key Squares
+
+Every pawn has a set of **key squares**. If your king reaches one of them, the pawn
+promotes — no matter whose move it is. For a pawn on the 5th rank, the key squares
+are the three squares two ranks ahead (for the `e5` pawn below: **d7, e7, f7**).
+
+<InteractiveBoard fen="4k3/8/8/3KP3/8/8/8/8" turn="w" />
+
+The whole endgame becomes a race: **get your king to a key square**, and you win.
+The defender's job is to stop your king from ever reaching one.
+
+## Triangulation
+
+Sometimes you have a winning position but only if it were the *opponent's* move —
+this is **zugzwang**. In the position below it's Black to move, and Black loses:
+every king move gives ground, and White breaks through.
+
+<InteractiveBoard fen="4k3/8/8/4K3/4P3/8/8/8" turn="b" />
+
+If the same position arose with **White** to move, it would only be a draw. So White
+wants to reach this exact position but with Black on the move. The king does it by
+**triangulation** — taking a three-square "triangle" route to lose a single tempo,
+returning to the same square having used one extra move. That hands the zugzwang back
+to the opponent.
+
+## Key Ideas
+
+- **Aim for the key squares**, not just for pushing the pawn — the king leads.
+- **The opposition is a tool**, not the goal: use it to reach a key square.
+- **Triangulate to lose a move** when you need the opponent to be the one in
+  zugzwang.
+
+:::tip
+Master king and pawn endgames first. Because every piece can be traded off, almost
+every endgame can simplify into one — and knowing who wins the resulting K+P race
+tells you what to aim for the whole game.
+:::

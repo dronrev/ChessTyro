@@ -1,0 +1,55 @@
+---
+sidebar_position: 11
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Asas Permainan Akhir
+
+**Permainan akhir** (endgame) ialah fasa terakhir, apabila sedikit buah tinggal. Di
+sini raja menjadi penyerang yang kuat, dan walau satu bidak lebih pun sering memadai
+untuk menang. Asas-asas ini menukar kelebihan kecil menjadi mata penuh.
+
+## Oposisi
+
+Apabila dua raja berdiri pada fail (atau rank) yang sama dengan **satu petak kosong
+di antaranya**, mereka berada dalam **oposisi**. Pemain yang *tidak* perlu bergerak
+memegang oposisi — raja yang satu lagi terpaksa mengetepi dan memberi laluan.
+
+Di sini kedua-dua raja berhadapan di fail-e. Sesiapa yang **bukan** giliran untuk
+bergerak mengawal petak-petak penting:
+
+<InteractiveBoard fen="4k3/8/4K3/8/8/8/8/8" turn="w" />
+
+Memenangi oposisi membolehkan raja anda memaksa jalan ke hadapan — kunci kepada
+kebanyakan permainan akhir raja-dan-bidak.
+
+## Raja & Bidak lawan Raja
+
+Sebuah bidak bersendirian hanya naik pangkat jika **raja anda mendahuluinya** dan
+mengawal petak-petak di hadapan. Dengan raja di hadapan bidak dan memegang oposisi,
+Putih menang:
+
+<InteractiveBoard fen="4k3/8/4K3/4P3/8/8/8/8" turn="w" />
+
+Sebaliknya, jika raja bertahan berada **tepat di hadapan** bidak sambil memegang
+oposisi, permainan biasanya **seri** — penyerang tidak dapat maju tanpa membenarkan
+buntu atau kehilangan bidak.
+
+## Peraturan Petak (Rule of the Square)
+
+Untuk melihat sama ada raja bersendirian boleh menangkap bidak lepas yang berlari,
+bayangkan **petak** (square) yang sisinya membentang dari bidak ke rank naik
+pangkatnya. Jika raja bertahan boleh melangkah **masuk ke dalam petak itu** pada
+giliannya, ia menangkap bidak; jika tidak, bidak naik pangkat.
+
+Bidak putih di a5 memerlukan tiga gerakan untuk sampai ke a8. Raja hitam di e5
+berada **di luar** petak itu — jika giliran Putih, bidak berlari dan menjadi menteri:
+
+<InteractiveBoard fen="8/8/8/P3k3/8/8/8/7K" turn="w" />
+
+:::tip
+Dua panduan ringkas untuk permainan akhir:
+1. **Aktifkan raja anda** — bawa ia ke arah tengah dan ke dalam tindakan.
+2. **Tolak bidak lepas**, tetapi hanya dengan sokongan raja anda.
+:::

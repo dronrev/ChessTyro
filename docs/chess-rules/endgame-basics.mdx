@@ -1,0 +1,53 @@
+---
+sidebar_position: 11
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Endgame Basics
+
+The **endgame** is the final phase, when few pieces remain. Here the king becomes a
+strong attacker, and even a single extra pawn is often enough to win. These
+fundamentals turn small advantages into full points.
+
+## The Opposition
+
+When the two kings stand on the same file (or rank) with **one empty square between
+them**, they are in **opposition**. The player who does *not* have to move holds the
+opposition — the other king must step aside and give ground.
+
+Here the kings face off on the e-file. Whoever is **not** to move controls the key
+squares:
+
+<InteractiveBoard fen="4k3/8/4K3/8/8/8/8/8" turn="w" />
+
+Winning the opposition lets your king force its way forward — the key to most
+king-and-pawn endgames.
+
+## King & Pawn vs. King
+
+A lone pawn only promotes if your **king leads it** and controls the squares ahead.
+With the king in front of the pawn and the opposition, White wins:
+
+<InteractiveBoard fen="4k3/8/4K3/4P3/8/8/8/8" turn="w" />
+
+If instead the defending king sits **directly in front** of the pawn with the
+opposition, the game is usually a **draw** — the attacker can't make progress
+without allowing stalemate or losing the pawn.
+
+## The Rule of the Square
+
+To see whether a lone king can catch a running passed pawn, imagine the **square**
+whose side runs from the pawn to its promotion rank. If the defending king can step
+**into that square** on its move, it catches the pawn; if not, the pawn promotes.
+
+The white pawn on a5 needs three moves to reach a8. The black king on e5 is
+**outside** the square — if it's White's move the pawn runs and queens:
+
+<InteractiveBoard fen="8/8/8/P3k3/8/8/8/7K" turn="w" />
+
+:::tip
+Two rules of thumb for endgames:
+1. **Activate your king** — bring it toward the center and into the action.
+2. **Push passed pawns**, but only with your king supporting them.
+:::

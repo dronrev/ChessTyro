@@ -1,0 +1,69 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0;
+}
+
+.board {
+  width: min(90vw, 400px);
+  border: 2px solid var(--ifm-color-emphasis-700);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.moves {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.35rem;
+  align-items: baseline;
+  justify-content: center;
+  max-width: min(90vw, 400px);
+  margin: 0;
+  padding: 0.5rem 0.75rem;
+  background: var(--ifm-color-emphasis-100);
+  border-radius: 6px;
+}
+
+.moveItem {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2rem;
+}
+
+.moveNum {
+  color: var(--ifm-color-emphasis-600);
+  font-variant-numeric: tabular-nums;
+}
+
+.moveBtn,
+.moveActive {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 0.05rem 0.3rem;
+  cursor: pointer;
+  color: var(--ifm-font-color-base);
+}
+
+.moveBtn:hover {
+  background: var(--ifm-color-emphasis-200);
+}
+
+.moveActive {
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-weight: 600;
+}

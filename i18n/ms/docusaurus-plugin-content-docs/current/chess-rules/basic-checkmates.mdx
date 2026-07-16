@@ -1,0 +1,56 @@
+---
+sidebar_position: 10
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Sekakmat Asas
+
+Mengetahui cara menukar kelebihan menjadi sekakmat ialah kemahiran yang penting.
+Berikut ialah corak sekakmat asas yang setiap pemain patut mampu lakukan terhadap
+raja yang bersendirian. Idea utamanya sentiasa sama: guna buah anda untuk
+**menghapuskan petak larian** dan menghalau raja lawan ke tepi papan.
+
+## Menteri & Raja lawan Raja
+
+Menteri melakukan kebanyakan kerja, tetapi ia memerlukan **sokongan raja** untuk
+memberikan sekakmat — jika tidak, raja yang bersendirian boleh sahaja menangkapnya.
+
+Raja hitam di a8 disekakmat: menteri di b7 mengawal setiap petak larian, dan raja
+putih di b6 mempertahankan menteri supaya ia tidak boleh ditangkap:
+
+<InteractiveBoard fen="k7/1Q6/1K6/8/8/8/8/8" turn="b" />
+
+:::caution
+Ketika menyekakmat dengan menteri, berhati-hati dengan **buntu (stalemate)**! Jika
+raja lawan tiada gerakan sah tetapi *tidak* berada dalam sekak, permainan menjadi
+seri. Kekalkan raja dalam sekak atau beri ia satu petak sehingga raja anda sendiri
+tiba.
+:::
+
+## Tir & Raja lawan Raja
+
+Tanpa menteri ia mengambil masa lebih lama, tetapi kaedahnya sama. Tir memotong satu
+rank atau fail sementara raja anda mara untuk menolak raja lawan ke tepi.
+
+Raja hitam di a8 disekakmat: tir di h8 mengawal keseluruhan rank ke-8, dan raja putih
+di a6 mengawal a7 dan b7:
+
+<InteractiveBoard fen="k6R/8/K7/8/8/8/8/8" turn="b" />
+
+## Dua Tir lawan Raja
+
+Dua tir boleh menyekakmat dengan sendiri — raja anda tidak diperlukan pun. Ini
+dipanggil sekakmat **tangga** ("lawnmower"): kedua-dua tir bekerjasama, satu menahan
+raja pada satu garis sementara yang lain menyekak dari garis berikutnya.
+
+Di sini tir di a8 memberi sekak di sepanjang rank ke-8 sementara tir di b7 menutup
+rank ke-7, meninggalkan raja hitam tanpa jalan keluar:
+
+<InteractiveBoard fen="R3k3/1R6/8/8/8/8/8/7K" turn="b" />
+
+:::tip
+Corak yang perlu diingat: **halau raja ke tepi**, kemudian berikan sekakmat. Raja
+yang bersendirian sentiasa boleh disekakmat oleh R+M atau R+T, tetapi dua kuda
+sahaja *tidak* boleh memaksa sekakmat.
+:::

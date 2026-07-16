@@ -1,0 +1,60 @@
+---
+sidebar_position: 9
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Taktik Asas
+
+**Taktik** ialah urutan paksa yang pendek yang memenangi bahan atau memberikan
+sekakmat. Kebanyakan permainan antara pemula ditentukan oleh taktik, jadi belajar
+mengenal pasti corak-corak ini ialah cara terpantas untuk bertambah baik.
+
+## Cabang (Fork)
+
+**Cabang** ialah satu buah yang menyerang **dua atau lebih** buah lawan serentak.
+Kuda terkenal dengan cabang kerana ia menyerang dengan cara yang tidak boleh
+dihalang oleh buah lain.
+
+Di sini kuda putih di c7 memberi sekak kepada raja di e8 **dan** menyerang tir di
+a8. Raja mesti bergerak, dan Putih memenangi tir:
+
+<InteractiveBoard fen="r3k3/2N5/8/8/8/8/8/7K" turn="b" />
+
+## Pin (Sematan)
+
+**Pin** membekukan buah lawan: ia tidak boleh bergerak kerana buah yang lebih
+bernilai berada di belakangnya. Dalam **pin mutlak** buah di belakang ialah raja
+(bergerak menjadi haram); jika tidak, ia ialah **pin relatif**.
+
+Gajah putih di g5 menyematkan kuda hitam di f6 kepada menteri di d8 — jika kuda
+bergerak, Putih memenangi menteri:
+
+<InteractiveBoard fen="3q3k/8/5n2/6B1/8/8/8/4K3" turn="b" />
+
+## Skewer (Cucuk)
+
+**Skewer** adalah seperti pin secara terbalik: buah yang **lebih bernilai** berada di
+hadapan dan dipaksa bergerak, mendedahkan buah di belakangnya.
+
+Tir putih di e1 menyekak raja hitam di e4. Apabila raja mengetepi, tir menangkap
+menteri di e7:
+
+<InteractiveBoard fen="8/4q3/8/8/4k3/8/8/4R1K1" turn="b" />
+
+## Serangan Terdedah (Discovered Attack)
+
+**Serangan terdedah** berlaku apabila anda menggerakkan satu buah dari laluan untuk
+melepaskan serangan daripada buah di belakangnya. Apabila buah yang bergerak itu
+turut mencipta ancamannya sendiri, ia boleh menjadi sangat menghancurkan.
+
+Jika kuda putih di e5 bergerak, tir di e1 menyerang menteri hitam di e8 — dan kuda
+itu boleh mencipta ancaman kedua sambil ia berlepas (contohnya sekak kuda):
+
+<InteractiveBoard fen="k3q3/8/8/4N3/8/8/8/4R1K1" turn="w" />
+
+:::tip
+Sebelum setiap gerakan, imbas untuk **sekak, tangkapan, dan ancaman** — milik anda
+dan lawan anda. Kebanyakan taktik ditemui dengan bertanya "apakah semua gerakan
+paksa saya?"
+:::

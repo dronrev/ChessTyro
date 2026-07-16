@@ -1,0 +1,44 @@
+---
+sidebar_position: 4
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Kedudukan Philidor
+
+**Kedudukan Philidor** ialah teknik *seri* paling penting dalam permainan akhir tir.
+Apabila anda kurang satu bidak tetapi raja anda berada di hadapan bidak lawan, kaedah
+ini mengekalkan seri. Ia pasangan bertahan bagi
+[Kedudukan Lucena](./lucena-position).
+
+## Kedudukan
+
+Hitam bertahan menentang bidak Putih di e5. Raja Hitam menyekat di hadapan, dan kunci
+pertahanan ialah **tir Hitam di rank keenam**. Giliran Hitam untuk bergerak:
+
+<InteractiveBoard fen="4k3/8/r7/4P3/4K3/8/8/7R" turn="b" />
+
+## Pertahanan Rank Ketiga
+
+Rancangan seri mempunyai dua fasa:
+
+1. **Kekalkan rank keenam.** Kekalkan tir anda pada rank di hadapan bidak (rank ke-6
+   di sini). Ini menghalang raja lawan daripada maju untuk menyokong bidak — tanpa
+   bantuan raja, bidak tidak dapat maju.
+2. **Tukar kepada sekak dari belakang.** Sebaik sahaja lawan terpaksa menolak bidak
+   ke rank ke-6 (`e6`), turunkan tir anda ke hujung yang jauh (`Ra1`) dan sekak raja
+   dari belakang. Dengan bidak tidak lagi melindunginya, raja tidak dapat mengelak
+   sekakan, jadi ia seri.
+
+## Idea Utama
+
+- **Bawa raja anda ke hadapan bidak** dahulu — itulah yang memungkinkan seri.
+- **Tir di rank ketiga** (rank ke-6 dari sisi Putih) mengekang raja lawan.
+- **Setelah bidak maju, sekak dari belakang** — semakin jauh, semakin baik, supaya
+  raja tidak akan dapat mendekati tir anda.
+
+:::tip
+Lucena menang, Philidor seri. Jika anda kurang satu bidak dalam permainan akhir tir,
+sasarkan persediaan Philidor — raja di hadapan, tir di rank ketiga — dan anda akan
+mengekalkan lebih banyak kedudukan daripada yang anda jangka.
+:::

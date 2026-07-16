@@ -1,0 +1,52 @@
+---
+sidebar_position: 1
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Gambaran Keseluruhan & Objektif
+
+Catur ialah permainan strategi dua pemain yang dimainkan di atas papan persegi
+dengan **64 petak** yang disusun dalam **grid 8×8**. Seorang pemain mengawal buah
+**putih**, seorang lagi mengawal buah **hitam**. **Putih sentiasa bergerak dahulu**,
+dan pemain kemudian bergilir-gilir, membuat satu gerakan setiap giliran.
+
+## Objektif
+
+Matlamat permainan adalah untuk **menyekakmat** raja lawan anda — menyerang raja itu
+sedemikian rupa sehingga ia tidak dapat mengelak daripada ditangkap pada gerakan
+berikutnya. Apabila seekor raja disekakmat, permainan tamat serta-merta dan pemain
+itu kalah.
+
+Anda sebenarnya tidak pernah menangkap raja. Sebaliknya, permainan tamat pada saat
+raja tidak lagi mempunyai jalan untuk melarikan diri.
+
+## Menyusun Papan
+
+Letakkan papan supaya setiap pemain mempunyai **petak berwarna cerah di sudut kanan
+bawah** ("cerah di kanan").
+
+Setiap pemain bermula dengan **16 buah**:
+
+| Buah   | Bilangan | Baris permulaan |
+| ------ | -------- | --------------- |
+| Raja   | 1        | Baris belakang  |
+| Menteri| 1        | Baris belakang  |
+| Tir    | 2        | Baris belakang (sudut) |
+| Gajah  | 2        | Baris belakang  |
+| Kuda   | 2        | Baris belakang  |
+| Bidak  | 8        | Baris kedua     |
+
+Susunan baris belakang dari kiri ke kanan ialah: **Tir, Kuda, Gajah, Menteri, Raja,
+Gajah, Kuda, Tir**. Ingat: **menteri diletakkan pada warnanya sendiri** (menteri putih
+pada petak cerah, menteri hitam pada petak gelap).
+
+Kedudukan permulaan kelihatan seperti ini (Putih di bahagian bawah):
+
+<InteractiveBoard />
+
+## Menamakan Petak (Notasi Algebra)
+
+Lajur (fail) dilabel **a–h** dari kiri ke kanan dari sudut Putih; baris (rank)
+dinomborkan **1–8** dari sudut Putih. Setiap petak mempunyai nama unik seperti `e4`
+atau `g7`. Notasi ini digunakan di sepanjang dokumentasi selebihnya.

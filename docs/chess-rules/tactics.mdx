@@ -1,0 +1,58 @@
+---
+sidebar_position: 9
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Basic Tactics
+
+**Tactics** are short forcing sequences that win material or deliver checkmate. Most
+games between beginners are decided by tactics, so learning to spot these patterns
+is the fastest way to improve.
+
+## Fork
+
+A **fork** is a single piece attacking **two or more** enemy pieces at once. Knights
+are famous for forking because they attack in a way no other piece can block.
+
+Here the white knight on c7 gives check to the king on e8 **and** attacks the rook
+on a8. The king must move, and White wins the rook:
+
+<InteractiveBoard fen="r3k3/2N5/8/8/8/8/8/7K" turn="b" />
+
+## Pin
+
+A **pin** freezes an enemy piece: it can't move because a more valuable piece sits
+behind it. In an **absolute pin** the piece behind is the king (moving would be
+illegal); otherwise it is a **relative pin**.
+
+The white bishop on g5 pins the black knight on f6 to the queen on d8 — if the
+knight moves, White wins the queen:
+
+<InteractiveBoard fen="3q3k/8/5n2/6B1/8/8/8/4K3" turn="b" />
+
+## Skewer
+
+A **skewer** is like a pin in reverse: the **more valuable** piece is in front and
+is forced to move, exposing the piece behind it.
+
+The white rook on e1 checks the black king on e4. When the king steps aside, the
+rook captures the queen on e7:
+
+<InteractiveBoard fen="8/4q3/8/8/4k3/8/8/4R1K1" turn="b" />
+
+## Discovered Attack
+
+A **discovered attack** happens when you move one piece out of the way to unleash an
+attack from a piece behind it. When the moving piece also creates its own threat,
+these can be devastating.
+
+If the white knight on e5 moves, the rook on e1 attacks the black queen on e8 — and
+the knight can create a second threat as it leaves (for example a knight check):
+
+<InteractiveBoard fen="k3q3/8/8/4N3/8/8/8/4R1K1" turn="w" />
+
+:::tip
+Before every move, scan for **checks, captures, and threats** — both yours and your
+opponent's. Most tactics are found by asking "what are all my forcing moves?"
+:::

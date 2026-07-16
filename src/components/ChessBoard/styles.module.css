@@ -1,0 +1,68 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: min(90vw, 400px);
+  aspect-ratio: 1 / 1;
+  border: 2px solid var(--ifm-color-emphasis-700);
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.light,
+.dark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.light {
+  background-color: #f0d9b5;
+}
+
+.dark {
+  background-color: #b58863;
+}
+
+.piece {
+  font-size: min(9vw, 2.4rem);
+  line-height: 1;
+  /* Render the outlined "white" glyphs with a solid white fill and dark
+     outline so they read clearly on both square colors. */
+  color: #fff;
+  text-shadow:
+    0 0 1px #000,
+    0 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.piece[aria-label='black'] {
+  color: #1a1a1a;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.rankLabel,
+.fileLabel {
+  position: absolute;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.rankLabel {
+  top: 2px;
+  left: 3px;
+}
+
+.fileLabel {
+  bottom: 1px;
+  right: 3px;
+}

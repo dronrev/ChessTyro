@@ -1,0 +1,57 @@
+---
+sidebar_position: 5
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Seri & Pengakhiran Lain
+
+Bukan setiap permainan berakhir dengan kemenangan. Sesuatu permainan boleh berakhir
+dengan **seri** dalam beberapa cara.
+
+## Cara Permainan Menjadi Seri
+
+- **Buntu (stalemate)** — pemain yang mendapat giliran tiada gerakan sah tetapi tidak
+  berada dalam sekak (lihat
+  [Sekak, Sekakmat & Buntu](./check-checkmate-stalemate#buntu-stalemate)).
+- **Persetujuan** — kedua-dua pemain sekadar bersetuju untuk seri.
+- **Ulangan tiga kali** — **kedudukan yang sama** berlaku tiga kali (dengan pemain
+  yang sama untuk bergerak dan gerakan yang sama boleh dilakukan); mana-mana pemain
+  boleh menuntut seri.
+- **Peraturan lima puluh gerakan** — jika **50 gerakan berturut-turut** oleh setiap
+  pemain berlalu tanpa bidak digerakkan dan tanpa sebarang tangkapan, mana-mana
+  pemain boleh menuntut seri.
+- **Bahan tidak mencukupi** — kedua-dua pihak tidak mempunyai buah yang cukup untuk
+  memberikan sekakmat, contohnya:
+  - Raja lawan Raja
+  - Raja dan Gajah lawan Raja
+  - Raja dan Kuda lawan Raja
+- **Kedudukan mati** — tiada urutan gerakan sah yang mungkin membawa kepada sekakmat.
+
+Seekor raja dan gajah sahaja tidak boleh memaksa sekakmat terhadap raja yang
+bersendirian, jadi kedudukan ini ialah **seri kerana bahan tidak mencukupi** dengan
+serta-merta:
+
+<InteractiveBoard fen="4k3/8/8/8/8/8/8/2B1K3" turn="w" />
+
+## Cara Lain Permainan Berakhir
+
+- **Mengalah** — pemain yang percaya kedudukannya tiada harapan boleh **mengalah**,
+  memberikan kemenangan kepada lawan. Ini lazim dalam permainan serius.
+- **Kehabisan masa (flag fall)** — dalam permainan bermasa, pemain yang kehabisan
+  masa kalah, kecuali jika lawan mempunyai bahan yang tidak mencukupi untuk
+  menyekakmat, maka ia menjadi seri.
+
+## Nilai Relatif Buah-buah Catur
+
+Walaupun bukan peraturan rasmi, nilai mata anggaran ini membantu anda menilai sama
+ada sesuatu pertukaran atau tangkapan berbaloi:
+
+| Buah   | Nilai (mata) |
+| ------ | ------------ |
+| Bidak  | 1            |
+| Kuda   | 3            |
+| Gajah  | 3            |
+| Tir    | 5            |
+| Menteri| 9            |
+| Raja   | Tak ternilai (tidak boleh ditangkap) |

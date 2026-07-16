@@ -1,0 +1,46 @@
+---
+sidebar_position: 3
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Kedudukan Lucena
+
+**Kedudukan Lucena** ialah teknik *kemenangan* paling penting dalam permainan akhir
+tir. Ia menunjukkan cara menukar bidak lebih apabila bidak anda telah sampai ke rank
+ke-7 dan raja anda tersekat di hadapannya. Kaedah kemenangan ini dipanggil **"membina
+jambatan"** (building a bridge).
+
+## Kedudukan
+
+Putih mempunyai bidak di d7 dan raja di hadapannya di d8. Raja Hitam terputus di
+fail-e, dan tir Hitam memberi sekak dari sisi. Giliran Putih untuk bergerak:
+
+<InteractiveBoard fen="3K4/3P4/5k2/8/8/8/r7/4R3" turn="w" />
+
+Masalahnya: jika raja mengetepi dari d8 untuk membiarkan bidak naik pangkat, Hitam
+menyekak raja tanpa henti di sepanjang fail dan rank. Jambatan menyelesaikan ini.
+
+## Membina Jambatan
+
+Rancangan kemenangan mempunyai tiga langkah:
+
+1. **Tir ke rank keempat** (`Re4`). Ini menyediakan perisai tiga petak di hadapan
+   bidak.
+2. **Bawa raja keluar** ke arah sisi tir (`Kc7`, `Kc6`…). Hitam terus menyekak.
+3. **Halang sekak dengan tir** (`Rc4`). Tir menghalang — "jambatan" itu — menamatkan
+   sekakan, dan bidak naik pangkat pada gerakan berikutnya.
+
+## Idea Utama
+
+- **Raja anda mesti berada di hadapan bidak**, dan bidak pada rank ke-7 — itulah yang
+  menjadikannya Lucena.
+- **Putuskan raja lawan** sekurang-kurangnya satu fail supaya ia tidak dapat membantu
+  menghalang bidak.
+- **Tir di rank keempat** ialah keseluruhan helahnya: ia melindungi raja anda daripada
+  sekak sisi supaya ia boleh mengiringi bidak sampai ke penghujung.
+
+:::tip
+Jika anda hanya boleh menghafal satu permainan akhir kemenangan, jadikan ia Lucena —
+"bina jambatan" menukar banyak sekali permainan akhir tir-dan-bidak.
+:::

@@ -1,0 +1,71 @@
+---
+sidebar_position: 8
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Reading & Writing Notation
+
+**Algebraic notation** is the standard way to record chess moves. It lets you write
+down a game, read chess books, and follow the diagrams in this documentation.
+
+## Naming the Squares
+
+Every square has a unique name made of its **file letter** (a–h) and its **rank
+number** (1–8). Files go left-to-right from White's side; ranks go from White (1) to
+Black (8). The pawn below sits on **e4**:
+
+<InteractiveBoard fen="4k3/8/8/8/4P3/8/8/4K3" turn="w" />
+
+## Naming the Pieces
+
+Each piece is written with an uppercase letter:
+
+| Piece  | Letter |
+| ------ | ------ |
+| King   | K      |
+| Queen  | Q      |
+| Rook   | R      |
+| Bishop | B      |
+| Knight | N (not K!) |
+| Pawn   | *(no letter)* |
+
+## Writing a Move
+
+A move is the piece letter followed by the destination square:
+
+- **`Nf3`** — a knight moves to f3.
+- **`e4`** — a pawn moves to e4 (pawns have no letter).
+- **`Bb5`** — a bishop moves to b5.
+
+## Special Symbols
+
+| Symbol | Meaning |
+| ------ | ------- |
+| `x`    | Captures (e.g. `Bxe5`, or `exd5` for a pawn capture) |
+| `+`    | Check |
+| `#`    | Checkmate |
+| `O-O`  | Kingside castling |
+| `O-O-O`| Queenside castling |
+| `=`    | Promotion (e.g. `e8=Q`) |
+| `e.p.` | En passant capture |
+| `!` / `?` | Good move / mistake (commentary) |
+
+## Recording a Game
+
+Moves are numbered, with White's move first and Black's second:
+
+```
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5 a6
+```
+
+The result is written at the end: **`1-0`** (White wins), **`0-1`** (Black wins),
+or **`½-½`** (draw).
+
+:::tip Disambiguation
+If two identical pieces could move to the same square, add the starting file or
+rank to make it clear — for example `Nbd2` (the knight from the b-file) or `R1e2`
+(the rook on rank 1).
+:::

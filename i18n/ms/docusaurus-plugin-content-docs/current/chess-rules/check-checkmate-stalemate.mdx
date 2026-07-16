@@ -1,0 +1,61 @@
+---
+sidebar_position: 4
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Sekak, Sekakmat & Buntu (Stalemate)
+
+Raja ialah buah paling penting. Ketiga-tiga keadaan ini berkisar tentang keselamatan
+raja.
+
+## Sekak
+
+Seekor raja berada **dalam sekak** apabila ia diserang oleh sekurang-kurangnya satu
+buah lawan. Apabila anda berada dalam sekak, anda **mesti** keluar daripadanya pada
+gerakan anda yang berikutnya. Terdapat tiga cara untuk bertindak balas:
+
+1. **Gerakkan** raja ke petak yang selamat.
+2. **Halang** serangan itu dengan meletakkan sebuah buah di antara raja dan penyerang
+   (tidak boleh dilakukan terhadap kuda atau penyerang yang bersebelahan).
+3. **Tangkap** buah yang memberikan sekak.
+
+Anda **tidak boleh sekali-kali** membuat gerakan yang meninggalkan raja anda sendiri
+dalam sekak.
+
+Di sini tir putih di e1 menyerang raja hitam di e8 di sepanjang lajur-e yang terbuka —
+raja **berada dalam sekak** dan mesti bertindak balas:
+
+<InteractiveBoard fen="4k3/8/8/8/8/8/8/K3R3" turn="b" />
+
+## Sekakmat
+
+**Sekakmat** berlaku apabila seekor raja berada dalam sekak dan **tiada gerakan sah**
+untuk mengelaknya. Permainan tamat serta-merta, dan pemain yang disekakmat **kalah**.
+Sekakmat ialah cara utama untuk memenangi permainan catur.
+
+Ini ialah **mat baris belakang** yang klasik: tir putih di a8 menyekak raja hitam,
+yang terperangkap di belakang bidak-bidaknya sendiri di f7, g7, dan h7 tanpa jalan
+keluar:
+
+<InteractiveBoard fen="R5k1/5ppp/8/8/8/8/8/K7" turn="b" />
+
+## Buntu (Stalemate)
+
+**Buntu** berlaku apabila pemain yang mendapat giliran **tiada gerakan sah** tetapi
+rajanya **tidak berada dalam sekak**. Ini ialah **seri** — tiada pemain yang menang.
+
+Buntu ialah sumber pertahanan yang penting: pemain yang hampir kalah kadangkala boleh
+menyelamatkan permainan dengan memaksa keadaan buntu. Berhati-hatilah agar tidak
+membuntukan lawan ketika anda cuba menyekakmatnya.
+
+Di bawah, giliran Hitam untuk bergerak. Raja di a8 **tidak** berada dalam sekak,
+tetapi setiap petak yang boleh ia tuju (a7, b7, b8) dikawal oleh menteri putih —
+maka tanpa gerakan sah, permainan menjadi **seri**:
+
+<InteractiveBoard fen="k7/8/1QK5/8/8/8/8/8" turn="b" />
+
+:::tip Sekak lawan Buntu
+Perbezaan utama: dalam **sekakmat** raja *sedang* diserang tanpa jalan keluar; dalam
+**buntu** raja *tidak* diserang, tetapi pemain sekadar tiada gerakan yang sah.
+:::

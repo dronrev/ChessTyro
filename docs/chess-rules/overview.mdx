@@ -1,0 +1,51 @@
+---
+sidebar_position: 1
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Overview & Objective
+
+Chess is a two-player strategy game played on a square board of **64 squares**
+arranged in an **8×8 grid**. One player controls the **white** pieces, the other
+controls the **black** pieces. **White always moves first**, and players then
+alternate turns, making exactly one move per turn.
+
+## The Objective
+
+The goal of the game is to **checkmate** your opponent's king — to attack the
+king in such a way that it cannot escape capture on the next move. When a king is
+checkmated, the game ends immediately and that player loses.
+
+You never actually capture the king. Instead, the game ends the moment escape
+becomes impossible.
+
+## Setting Up the Board
+
+Place the board so that each player has a **light-colored square in the bottom-right
+corner** ("light on right").
+
+Each player starts with **16 pieces**:
+
+| Piece  | Count | Starting rank |
+| ------ | ----- | ------------- |
+| King   | 1     | Back rank     |
+| Queen  | 1     | Back rank     |
+| Rook   | 2     | Back rank (corners) |
+| Bishop | 2     | Back rank     |
+| Knight | 2     | Back rank     |
+| Pawn   | 8     | Second rank   |
+
+The back-rank order from left to right is: **Rook, Knight, Bishop, Queen, King,
+Bishop, Knight, Rook**. Remember: **the queen goes on her own color** (white queen
+on a light square, black queen on a dark square).
+
+The starting position looks like this (White at the bottom):
+
+<InteractiveBoard />
+
+## Naming Squares (Algebraic Notation)
+
+Files (columns) are labeled **a–h** left to right from White's side; ranks (rows)
+are numbered **1–8** from White's side. Each square has a unique name like `e4`
+or `g7`. This notation is used throughout the rest of this documentation.

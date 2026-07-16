@@ -1,0 +1,45 @@
+---
+sidebar_position: 3
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# The Lucena Position
+
+The **Lucena Position** is the most important *winning* technique in rook endgames.
+It shows how to convert an extra pawn when your pawn has reached the 7th rank and
+your king is stuck in front of it. The winning method is called **"building a
+bridge."**
+
+## The Position
+
+White has a pawn on d7 and the king in front of it on d8. Black's king is cut off on
+the e-file, and Black's rook gives checks from the side. It's White to move:
+
+<InteractiveBoard fen="3K4/3P4/5k2/8/8/8/r7/4R3" turn="w" />
+
+The problem: if the king steps off d8 to let the pawn promote, Black checks the king
+endlessly along the files and ranks. The bridge solves this.
+
+## Building the Bridge
+
+The winning plan has three steps:
+
+1. **Rook to the fourth rank** (`Re4`). This prepares a shield three squares in front
+   of the pawn.
+2. **Walk the king out** toward the rook's side (`Kc7`, `Kc6`…). Black keeps checking.
+3. **Block the check with the rook** (`Rc4`). The rook interposes — the "bridge" —
+   ending the checks, and the pawn promotes next move.
+
+## Key Ideas
+
+- **Your king must be in front of the pawn**, and the pawn on the 7th rank — that's
+  what makes it a Lucena.
+- **Cut off the enemy king** by at least one file so it can't help stop the pawn.
+- **The rook on the fourth rank** is the whole trick: it shelters your king from the
+  side checks so it can escort the pawn home.
+
+:::tip
+If you can only memorize one winning endgame, make it Lucena — "build a bridge"
+converts countless rook-and-pawn endings.
+:::

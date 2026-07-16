@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "Chess Tyro",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "Logo Chess Tyro",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Guide": {
+    "message": "Panduan",
+    "description": "Navbar item with label Guide"
+  }
+}

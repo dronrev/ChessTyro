@@ -1,0 +1,50 @@
+---
+sidebar_position: 3
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+import MoveViewer from '@site/src/components/MoveViewer';
+
+# Ruy López
+
+The **Ruy López** (also called the **Spanish**) is one of the oldest and most
+respected openings. Like the [Italian Game](./italian-game), White develops
+naturally — but instead of aiming the bishop at f7, White uses it to pressure the
+knight that defends Black's `e5` pawn.
+
+## Main Line
+
+```
+1. e4 e5
+2. Nf3 Nc6
+3. Bb5
+```
+
+It's Black to move in the position below — drag the pieces to continue the game:
+
+<InteractiveBoard fen="r1bqkbnr/pppp1ppp/2n5/1B2p3/4P3/5N2/PPPP1PPP/RNBQKB1R" turn="b" />
+
+## Key Ideas
+
+- **Pressure the defender.** The bishop on b5 pins the knight on c6 against the e5
+  pawn, indirectly attacking Black's center.
+- **The threat is positional, not immediate.** White isn't winning the pawn yet
+  (after `Bxc6 dxc6`, `Nxe5` gives the pawn back to `Qd4` or `Qg5`), but the tension
+  shapes the whole game.
+- **Long-term play.** The Ruy López often leads to rich, strategic middlegames where
+  small advantages matter — which is why it's a favorite at every level.
+
+## Typical Continuation
+
+The most common reply is **3... a6**, the **Morphy Defense**, asking the bishop to
+decide. Step through the line, or press **Play**:
+
+<MoveViewer moves="1. e4 e5 2. Nf3 Nc6 3. Bb5 a6 4. Ba4 Nf6 5. O-O" />
+
+White retreats the bishop (keeping the pin) and castles. This is the starting point
+of countless famous games.
+
+:::tip
+The Ruy López rewards understanding over memorization. Focus on the idea — pressure
+on `c6` and `e5` — rather than trying to recall long move sequences.
+:::

@@ -1,0 +1,50 @@
+---
+sidebar_position: 5
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+import MoveViewer from '@site/src/components/MoveViewer';
+
+# Pertahanan Slav
+
+**Pertahanan Slav** ialah salah satu cara paling kukuh dan popular untuk menentang
+**Gambit Menteri** (`1. d4 d5 2. c4`). Hitam menyokong bidak `d5` dengan `c6` dan
+bukannya `e6`, mengekalkan kedudukan yang teguh tanpa mengurung gajah petak cerah.
+
+## Barisan Utama
+
+```
+1. d4 d5
+2. c4 c6
+```
+
+Giliran Putih untuk bergerak dalam kedudukan di bawah — seret buah-buah untuk
+meneruskan permainan:
+
+<InteractiveBoard fen="rnbqkbnr/pp2pppp/2p5/3p4/2PP4/8/PP2PPPP/RNBQKBNR" turn="w" />
+
+## Idea Utama
+
+- **Pertahankan d5 tanpa mengurung gajah.** Menyokong tengah dengan `c6` (dan bukan
+  `e6`) membiarkan gajah petak cerah bebas dibangunkan ke `f5` atau `g4`.
+- **Struktur yang sangat kukuh.** Slav terkenal sukar dipecahkan, sebab itu ia
+  dipercayai di peringkat yang paling tinggi.
+- **Bidak fleksibel di c4.** Hitam boleh kemudian merampas bidak `c4` dengan `dxc4`
+  dan cuba mengekalkannya dengan `b5`, memberikan pembukaan ini gigi yang sebenar.
+
+## Kesinambungan Lazim
+
+Barisan utama membangun secara semula jadi sebelum Hitam menyelesaikan ketegangan
+tengah. Langkah gerakannya, atau tekan **Play**:
+
+<MoveViewer moves="1. d4 d5 2. c4 c6 3. Nf3 Nf6 4. Nc3 dxc4" />
+
+Hitam menangkap di `c4`, dan selepas Putih memperoleh semula bidak (biasanya dengan
+`a4` dan `Bxc4`), kedua-dua pihak mencapai permainan tengah yang seimbang dan
+difahami dengan baik.
+
+:::tip
+Slav ialah pasangan `1. d4` bagi [Caro-Kann](./caro-kann): kedua-duanya menggunakan
+`c6` untuk membina struktur yang kukuh dan bebas kelemahan sambil mengekalkan gajah
+petak cerah aktif.
+:::

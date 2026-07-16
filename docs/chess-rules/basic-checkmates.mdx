@@ -1,0 +1,55 @@
+---
+sidebar_position: 10
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Basic Checkmates
+
+Knowing how to convert an advantage into checkmate is an essential skill. These are
+the fundamental mating patterns every player should be able to deliver against a
+lone king. The key idea is always the same: use your pieces to **take away escape
+squares** and drive the enemy king to the edge of the board.
+
+## Queen & King vs. King
+
+The queen does most of the work, but she needs the **king's support** to deliver
+mate — otherwise the lone king could simply capture her.
+
+The black king on a8 is checkmated: the queen on b7 covers every escape square, and
+the white king on b6 defends the queen so she can't be taken:
+
+<InteractiveBoard fen="k7/1Q6/1K6/8/8/8/8/8" turn="b" />
+
+:::caution
+When mating with a queen, watch out for **stalemate**! If the enemy king has no
+legal move but is *not* in check, the game is a draw. Keep the king in check or
+leave it a square until your own king arrives.
+:::
+
+## Rook & King vs. King
+
+Without a queen it takes longer, but the method is the same. The rook cuts off a
+rank or file while your king marches up to push the enemy king to the edge.
+
+The black king on a8 is mated: the rook on h8 controls the whole 8th rank, and the
+white king on a6 guards a7 and b7:
+
+<InteractiveBoard fen="k6R/8/K7/8/8/8/8/8" turn="b" />
+
+## Two Rooks vs. King
+
+Two rooks can checkmate on their own — your king isn't even needed. This is called
+the **ladder** (or "lawnmower") mate: the rooks work together, one holding the king
+on a line while the other checks from the next one.
+
+Here the rook on a8 delivers check along the 8th rank while the rook on b7 seals off
+the 7th rank, leaving the black king no escape:
+
+<InteractiveBoard fen="R3k3/1R6/8/8/8/8/8/7K" turn="b" />
+
+:::tip
+The pattern to remember: **drive the king to the edge**, then deliver mate. A lone
+king can always be checkmated by K+Q or K+R, but two knights alone *cannot* force
+mate.
+:::

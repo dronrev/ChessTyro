@@ -1,0 +1,50 @@
+---
+sidebar_position: 4
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+import MoveViewer from '@site/src/components/MoveViewer';
+
+# Pertahanan Caro-Kann
+
+**Caro-Kann** ialah salah satu balasan paling kukuh terhadap `1. e4`. Daripada
+menentang bidak secara terus dengan `1... e5`, Hitam bersedia mencabar tengah papan
+dengan `d5` sambil mengekalkan struktur bidak yang sangat teguh.
+
+## Barisan Utama
+
+```
+1. e4 c6
+2. d4 d5
+```
+
+Giliran Putih untuk bergerak dalam kedudukan di bawah — seret buah-buah untuk
+meneruskan permainan:
+
+<InteractiveBoard fen="rnbqkbnr/pp2pppp/2p5/3p4/3PP3/8/PPP2PPP/RNBQKBNR" turn="w" />
+
+## Idea Utama
+
+- **Cabar tengah dengan selamat.** `c6` menyokong `d5` yang akan datang, menyerang
+  bidak `e4` Putih tanpa melemahkan kedudukan Hitam.
+- **Struktur yang sihat.** Tidak seperti Pertahanan Perancis, Hitam tidak mengurung
+  gajah petak cerah — ia boleh dibangunkan secara aktif ke `f5` atau `g4` sebelum
+  bermain `e6`.
+- **Kukuh, bukan pasif.** Caro-Kann menukar sedikit ruang untuk kedudukan yang teguh
+  dan tahan lama yang sukar diserang — kegemaran pemain yang suka kejelasan.
+
+## Kesinambungan Lazim
+
+**Variasi Klasik** ialah barisan utama tradisional. Langkah gerakannya, atau tekan
+**Play**:
+
+<MoveViewer moves="1. e4 c6 2. d4 d5 3. Nc3 dxe4 4. Nxe4 Bf5" />
+
+Hitam membangunkan gajah di luar rantaian bidak dahulu, kemudian bermain `e6` untuk
+melengkapkan persediaan yang selesa dan mantap.
+
+:::tip
+Anggap Caro-Kann sebagai "sepupu kukuh" bagi barisan e5 [Itali](./italian-game):
+prinsip yang sama — rebut tengah papan dan bangunkan buah — tetapi dengan penekanan
+pada struktur yang selamat dan bebas kelemahan.
+:::

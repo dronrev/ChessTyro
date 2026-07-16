@@ -1,0 +1,74 @@
+---
+sidebar_position: 2
+---
+
+import InteractiveBoard from '@site/src/components/InteractiveBoard';
+
+# Cara Buah Bergerak
+
+Setiap jenis buah bergerak dengan caranya yang tersendiri. Sesuatu buah boleh
+**menangkap** buah lawan dengan bergerak ke petaknya (buah yang ditangkap disingkir
+daripada papan). Anda tidak boleh sekali-kali bergerak ke petak yang diduduki buah
+anda sendiri, dan — kecuali kuda — buah tidak boleh melompat melepasi buah lain.
+
+:::tip
+Pada papan di bawah, **klik mana-mana buah untuk melihat petak yang boleh
+didudukinya** (ditunjukkan sebagai titik). Cubalah!
+:::
+
+## Raja
+
+Bergerak **satu petak ke mana-mana arah** — mendatar, menegak, atau menyerong. Raja
+tidak boleh sekali-kali bergerak ke dalam sekak (petak yang diserang oleh buah
+lawan). Lihat [Gerakan Istimewa](./special-moves) untuk rok (castling).
+
+<InteractiveBoard fen="k7/8/8/8/4K3/8/7P/8" turn="w" highlight="e4" />
+
+## Menteri
+
+Buah paling berkuasa. Bergerak **seberapa banyak petak** dalam satu garis lurus —
+mendatar, menegak, atau menyerong — sehingga terhalang.
+
+<InteractiveBoard fen="k7/8/8/8/3Q4/8/8/7K" turn="w" highlight="d4" />
+
+## Tir
+
+Bergerak **seberapa banyak petak secara mendatar atau menegak**. Turut menyertai
+gerakan rok (castling).
+
+<InteractiveBoard fen="k7/8/8/8/3R4/8/8/7K" turn="w" highlight="d4" />
+
+## Gajah
+
+Bergerak **seberapa banyak petak secara menyerong**. Setiap gajah kekal pada warna
+permulaannya sepanjang permainan.
+
+<InteractiveBoard fen="k7/8/8/8/3B4/8/7P/7K" turn="w" highlight="d4" />
+
+## Kuda
+
+Bergerak dalam bentuk **"L"**: dua petak dalam satu arah kemudian satu petak serenjang.
+Kuda ialah **satu-satunya buah yang boleh melompat melepasi** buah lain. Ia sentiasa
+mendarat pada petak yang berwarna bertentangan dengan petak yang ditinggalkannya.
+
+Seekor kuda di **d4** boleh mencapai mana-mana daripada lapan petak (b3, b5, c2, c6,
+e2, e6, f3, f5):
+
+<InteractiveBoard fen="7k/8/8/8/3N4/8/8/K7" turn="w" highlight="d4" />
+
+## Bidak
+
+Bidak ialah buah yang paling terhad, dan cara ia bergerak dan menangkap adalah
+berbeza:
+
+- **Gerakan ke hadapan:** satu petak lurus ke hadapan (tidak pernah ke belakang).
+- **Gerakan pertama:** dari petak permulaannya, bidak boleh maju **satu atau dua
+  petak**.
+- **Menangkap:** satu petak **menyerong ke hadapan**, tidak pernah lurus ke hadapan.
+- Bidak juga mempunyai dua peraturan istimewa: **[en passant](./special-moves#en-passant)**
+  dan **[naik pangkat](./special-moves#naik-pangkat)**.
+
+Bidak putih di **e4** bergerak lurus ke e5, tetapi menangkap bidak hitam di **d5**
+atau **f5** secara menyerong:
+
+<InteractiveBoard fen="4k3/8/8/3p1p2/4P3/8/8/4K3" turn="w" highlight="e4" />
