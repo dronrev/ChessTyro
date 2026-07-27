@@ -1,6 +1,6 @@
 # Chess Tyro
 
-A chess learning site — rules, tactics, and strategy — available in English and
+A chess learning site - rules, tactics, and strategy - available in English and
 Bahasa Melayu. Built using [Docusaurus](https://docusaurus.io/), a modern static
 website generator.
 

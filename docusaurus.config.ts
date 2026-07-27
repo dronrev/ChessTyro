@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'Chess Tyro',
-  tagline: 'Learn to play chess — rules, tactics, and strategy',
+  tagline: 'Learn to play chess - rules, tactics, and strategy',
   favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -56,7 +56,7 @@ const config: Config = {
       {
         name: 'description',
         content:
-          'Learn chess from scratch with Chess Tyro — rules, tactics, openings and endgames explained with interactive boards. Free, in English and Bahasa Melayu.',
+          'Learn chess from scratch with Chess Tyro - rules, tactics, openings and endgames explained with interactive boards. Free, in English and Bahasa Melayu.',
       },
     ],
     colorMode: {

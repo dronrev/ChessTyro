@@ -6,7 +6,7 @@ import InteractiveBoard from '@site/src/components/InteractiveBoard';
 
 # Permainan Akhir Raja & Bidak
 
-Permainan akhir raja dan bidak ialah asas kepada semua permainan akhir — peraturan di
+Permainan akhir raja dan bidak ialah asas kepada semua permainan akhir - peraturan di
 sini bergema dalam setiap pengakhiran lain. Halaman ini melangkah lebih jauh daripada
 asas pada halaman [Asas Permainan Akhir](/docs/chess-rules/endgame-basics) (oposisi,
 peraturan petak) kepada dua idea penentu: **petak kunci** dan **triangulasi**.
@@ -14,7 +14,7 @@ peraturan petak) kepada dua idea penentu: **petak kunci** dan **triangulasi**.
 ## Petak Kunci
 
 Setiap bidak mempunyai satu set **petak kunci** (key squares). Jika raja anda sampai
-ke salah satunya, bidak naik pangkat — tidak kira giliran siapa. Bagi bidak di rank
+ke salah satunya, bidak naik pangkat - tidak kira giliran siapa. Bagi bidak di rank
 ke-5, petak kunci ialah tiga petak dua rank di hadapan (bagi bidak `e5` di bawah:
 **d7, e7, f7**).
 
@@ -27,27 +27,27 @@ mana-mana petak kunci.
 ## Triangulasi
 
 Kadangkala anda mempunyai kedudukan menang tetapi hanya jika giliran *lawan* untuk
-bergerak — inilah **zugzwang**. Dalam kedudukan di bawah giliran Hitam, dan Hitam
+bergerak - inilah **zugzwang**. Dalam kedudukan di bawah giliran Hitam, dan Hitam
 kalah: setiap gerakan raja memberi laluan, dan Putih menembusi.
 
 <InteractiveBoard fen="4k3/8/8/4K3/4P3/8/8/8" turn="b" />
 
 Jika kedudukan yang sama muncul dengan giliran **Putih** untuk bergerak, ia hanya
 seri. Jadi Putih mahu mencapai kedudukan yang sama ini tetapi dengan Hitam yang
-bergerak. Raja melakukannya melalui **triangulasi** — mengambil laluan "segi tiga"
+bergerak. Raja melakukannya melalui **triangulasi** - mengambil laluan "segi tiga"
 tiga petak untuk kehilangan satu tempo, kembali ke petak yang sama setelah menggunakan
 satu gerakan lebih. Itu menyerahkan zugzwang kembali kepada lawan.
 
 ## Idea Utama
 
-- **Sasarkan petak kunci**, bukan sekadar menolak bidak — raja mendahului.
+- **Sasarkan petak kunci**, bukan sekadar menolak bidak - raja mendahului.
 - **Oposisi ialah alat**, bukan matlamat: gunakannya untuk sampai ke petak kunci.
 - **Triangulasi untuk kehilangan satu gerakan** apabila anda perlukan lawan menjadi
   pihak yang berada dalam zugzwang.
 
 :::tip
 Kuasai permainan akhir raja dan bidak dahulu. Kerana setiap buah boleh ditukar,
-hampir setiap permainan akhir boleh dipermudah menjadi satu — dan mengetahui siapa
+hampir setiap permainan akhir boleh dipermudah menjadi satu - dan mengetahui siapa
 yang menang dalam perlumbaan R+B yang terhasil memberitahu anda apa yang perlu
 disasarkan sepanjang permainan.
 :::

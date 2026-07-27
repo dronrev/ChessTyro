@@ -29,7 +29,7 @@ function canSelect(game: Chess, square: string): boolean {
   return Boolean(piece && piece.color === game.turn());
 }
 
-// Real interactive board — only rendered in the browser (see index.tsx).
+// Real interactive board - only rendered in the browser (see index.tsx).
 export default function Board({
   fen,
   orientation = 'white',
@@ -54,7 +54,7 @@ export default function Board({
       try {
         game.move({from: sourceSquare, to: targetSquare, promotion: 'q'});
       } catch {
-        return false; // illegal move — snap the piece back
+        return false; // illegal move - snap the piece back
       }
       setPosition(game.fen());
       setSelected(null);
@@ -128,14 +128,14 @@ export default function Board({
 
   let status: string;
   if (game.isCheckmate()) {
-    status = `Checkmate — ${game.turn() === 'w' ? 'Black' : 'White'} wins`;
+    status = `Checkmate - ${game.turn() === 'w' ? 'Black' : 'White'} wins`;
   } else if (game.isStalemate()) {
-    status = 'Draw — stalemate';
+    status = 'Draw - stalemate';
   } else if (game.isDraw()) {
     status = 'Draw';
   } else {
     status = `${game.turn() === 'w' ? 'White' : 'Black'} to move${
-      game.isCheck() ? ' — check!' : ''
+      game.isCheck() ? ' - check!' : ''
     }`;
   }
 

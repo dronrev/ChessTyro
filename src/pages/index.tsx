@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={siteConfig.title}
-      description="Learn chess from scratch with Chess Tyro — rules, tactics, openings and endgames explained with interactive boards. Free, in English and Bahasa Melayu.">
+      description="Learn chess from scratch with Chess Tyro - rules, tactics, openings and endgames explained with interactive boards. Free, in English and Bahasa Melayu.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

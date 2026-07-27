@@ -29,7 +29,7 @@ const FeatureList: FeatureItem[] = [
     to: '/docs/chess-rules/tactics',
     description: (
       <>
-        Spot the patterns that win games — forks, pins, and skewers — plus the
+        Spot the patterns that win games - forks, pins, and skewers - plus the
         basic checkmates every player needs to know.
       </>
     ),

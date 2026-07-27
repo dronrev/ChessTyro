@@ -16,7 +16,7 @@
     "description": "The label for category 'Openings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Openings.link.generated-index.description": {
-    "message": "Melihat dengan lebih dekat pembukaan catur tertentu — gerakan utama, idea di sebaliknya, dan papan yang boleh anda mainkan.",
+    "message": "Melihat dengan lebih dekat pembukaan catur tertentu - gerakan utama, idea di sebaliknya, dan papan yang boleh anda mainkan.",
     "description": "The generated-index page description for category 'Openings' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Endgames": {
@@ -24,7 +24,7 @@
     "description": "The label for category 'Endgames' in sidebar 'tutorialSidebar'"
   },
   "sidebar.tutorialSidebar.category.Endgames.link.generated-index.description": {
-    "message": "Permainan akhir bernama yang penting yang perlu diketahui setiap pemain — teknik kemenangan dan seri, dengan papan yang boleh anda mainkan.",
+    "message": "Permainan akhir bernama yang penting yang perlu diketahui setiap pemain - teknik kemenangan dan seri, dengan papan yang boleh anda mainkan.",
     "description": "The generated-index page description for category 'Endgames' in sidebar 'tutorialSidebar'"
   }
 }
