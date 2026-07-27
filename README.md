@@ -4,6 +4,8 @@ A chess learning site - rules, tactics, and strategy - available in English and
 Bahasa Melayu. Built using [Docusaurus](https://docusaurus.io/), a modern static
 website generator.
 
+> "Every chess master was once a beginner." - Irving Chernev
+
 ## Previewing Malay
 
 The dev server (`npm run start`) serves one locale at a time. To preview Malay:

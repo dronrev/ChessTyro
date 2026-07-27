@@ -17,10 +17,10 @@ const config: Config = {
   // Set the production url of your site here
   url: 'https://dronrev.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  baseUrl: '/ChessDocuments/',
+  baseUrl: '/ChessTyro/',
 
   organizationName: 'dronrev', // GitHub org/user name
-  projectName: 'ChessDocuments', // GitHub repo name
+  projectName: 'ChessTyro', // GitHub repo name
 
   onBrokenLinks: 'throw',
 

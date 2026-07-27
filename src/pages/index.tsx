@@ -24,6 +24,10 @@ function HomepageHeader() {
             Start Learning Chess ♟️
           </Link>
         </div>
+        <figure className={styles.heroQuote}>
+          <blockquote>Every chess master was once a beginner.</blockquote>
+          <figcaption>Irving Chernev</figcaption>
+        </figure>
       </div>
     </header>
   );
